@@ -2,29 +2,51 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <!-- 适配移动端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的网页</title>
     <style>
-    body {
-    text-align: center;
-    font-size: 50px;
-    margin-top: 30px;
-    font-family: "SimSun", "宋体", serif; /* 更纯正的宋体 */
-    color: #2c2c2c; /* 柔和深灰色，比纯黑更有质感 */
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25); /* 柔和阴影，不厚重 */
-    letter-spacing: -2px; /* 适度紧凑，不拥挤 */
-    line-height: 1.2; /* 行间距舒适，诗句层次清晰 */
-  }   
-   img {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* 页面垂直+水平居中 */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            text-align: center;
+            font-size: 50px;
+            font-family: "SimSun", "宋体", serif;
+            color: #2c2c2c;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+            letter-spacing: -2px;
+            line-height: 1.6; /* 更舒适的行间距 */
+            padding: 20px;
+        }
+
+        p {
+            margin: 15px 0; /* 诗句之间自然间距 */
+        }
+
+        img {
             margin-top: 50px;
+            max-width: 100%; /* 图片不超出屏幕 */
+            height: auto;
         }
     </style>
 </head>
 <body>
     <p>别来二月家路长，簌簌冷渐天气凉。</p>
-    <br>
     <p>落木流影窗前过，此站尽处是故乡。</p>
-    <br>
-    
+
+    <!-- 如果你要加图片，把下方注释去掉并替换链接 -->
+    <!-- <img src="图片地址.jpg" alt="配图"> -->
 </body>
 </html>
 
